@@ -15,7 +15,7 @@ public class NetworkOperation<T>: Operation {
 
     var completionHandler: ((Result<T, NetworkError>) -> ())
 
-    init(request: RequestProtocol, serviceConfig: ServiceConfig, completionHandler: @escaping (Result<T, NetworkError>) -> ()) {
+    public init(request: RequestProtocol, serviceConfig: ServiceConfig, completionHandler: @escaping (Result<T, NetworkError>) -> ()) {
         self.request = request
         self.service = Service(serviceConfig)
         self.completionHandler = completionHandler
