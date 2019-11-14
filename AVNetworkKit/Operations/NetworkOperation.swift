@@ -36,14 +36,18 @@ public class NetworkOperation<T>: Operation {
     ///   - success: Block with the type associated with the operation.
     ///   - failure: Block in case the operation fails. Provides a NetworkError object.
     func execute() {
-        service.execute(request: request, { data in
-            do {
-                self.successHandler?(try self.parser().parse(data: data))
-            } catch {
-                self.failureHandler?(NetworkError.failedToParseJSONData(data))
+        service.execute(request: request) { (result) in
+            switch result {
+            case .failure(let networkError):
+                self.failureHandler?(networkError)
+            case .success(let data):
+                do {
+                    let parsedObject = try self.parser().parse(data: data)
+                    self.successHandler?(parsedObject)
+                } catch {
+                    self.failureHandler?(.failedToParseJSONData(data))
+                }
             }
-        }) { error in
-            self.failureHandler?(error)
         }
     }
 

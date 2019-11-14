@@ -29,25 +29,25 @@ public class Service: ServiceProtocol {
         self.headers = serviceConfig.headers
     }
 
-    public func execute(request: RequestProtocol, _ success: @escaping (Data) -> Void, _ failure: @escaping (NetworkError) -> Void) {
+    public func execute(request: RequestProtocol, completionHandler: @escaping (Result<Data, NetworkError>) -> ()) {
         do {
             let urlRequest = try request.urlRequest(in: self)
             
-            let completionHandler = { (data: Data?, response: URLResponse?, error: Error?) in
+            let completionHandlerForDataTask = { (data: Data?, response: URLResponse?, error: Error?) in
 
                 let parsedResponse = Response(response: response, data: data, error: error as NSError?, request: request)
 
                 switch parsedResponse.type {
                 case .success: // success
                     guard let data = data else {
-                        failure(NetworkError.error(parsedResponse))
+                        completionHandler(.failure(.error(parsedResponse)))
                         return
                     }
-                    success(data)
+                    completionHandler(.success(data))
                 case .error: // failure
-                    failure(NetworkError.error(parsedResponse))
+                    completionHandler(.failure(.error(parsedResponse)))
                 case .noResponse: // no response
-                    failure(NetworkError.noResponse(parsedResponse))
+                    completionHandler(.failure(.noResponse(parsedResponse)))
                 }
             }
             
@@ -59,11 +59,11 @@ public class Service: ServiceProtocol {
                 urlSession = URLSession.shared
             }
 
-            let dataTask = urlSession.dataTask(with: urlRequest, completionHandler: completionHandler)
+            let dataTask = urlSession.dataTask(with: urlRequest, completionHandler: completionHandlerForDataTask)
 
             dataTask.resume()
         } catch {
-            failure(NetworkError.invalidRequest(request))
+            completionHandler(.failure(.invalidRequest(request)))
         }
     }
 }

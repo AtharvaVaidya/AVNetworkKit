@@ -118,6 +118,7 @@ public extension RequestProtocol {
         if let bodyData = try self.body?.encodedData() { // set body if specified
             urlRequest.httpBody = bodyData
         }
+        
         return urlRequest
     }
 }

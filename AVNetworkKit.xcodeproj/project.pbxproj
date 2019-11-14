@@ -61,6 +61,8 @@
 		ECC8A727237D8B7D0061D8D1 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		ECC8A72C237D8BB00061D8D1 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		ECC8A72F237D8BD80061D8D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		ECC8A733237DB3ED0061D8D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ECC8A735237DB4520061D8D1 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,8 @@
 		ECC8A6E0237D8A330061D8D1 = {
 			isa = PBXGroup;
 			children = (
+				ECC8A733237DB3ED0061D8D1 /* README.md */,
+				ECC8A735237DB4520061D8D1 /* LICENSE.md */,
 				ECC8A6EC237D8A330061D8D1 /* AVNetworkKit */,
 				ECC8A6F7237D8A330061D8D1 /* AVNetworkKitTests */,
 				ECC8A6EB237D8A330061D8D1 /* Products */,
