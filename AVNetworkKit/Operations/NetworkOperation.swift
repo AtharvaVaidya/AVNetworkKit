@@ -16,14 +16,6 @@ public class NetworkOperation<T>: Operation {
     var successHandler: ((T) -> Void)?
     var failureHandler: ((NetworkError) -> Void)?
 
-    init(request: RequestProtocol, onSuccess: ((T) -> Void)?, onFailure: ((NetworkError) -> Void)?) {
-        self.request = request
-        service = Service()
-
-        successHandler = onSuccess
-        failureHandler = onFailure
-    }
-
     init(request: RequestProtocol, serviceConfig: ServiceConfig, onSuccess: ((T) -> Void)?, onFailure: ((NetworkError) -> Void)?) {
         self.request = request
         service = Service(serviceConfig)
