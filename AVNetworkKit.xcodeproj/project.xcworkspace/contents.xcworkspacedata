@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AVNetworkKit.xcodeproj">
+      location = "self:/Users/atharvavaidya/Developer/AVNetworkKit/AVNetworkKit.xcodeproj">
    </FileRef>
 </Workspace>

@@ -10,6 +10,22 @@
 		ECC8A6F4237D8A330061D8D1 /* AVNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC8A6EA237D8A330061D8D1 /* AVNetworkKit.framework */; };
 		ECC8A6F9237D8A330061D8D1 /* AVNetworkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A6F8237D8A330061D8D1 /* AVNetworkKitTests.swift */; };
 		ECC8A6FB237D8A330061D8D1 /* AVNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC8A6ED237D8A330061D8D1 /* AVNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC8A70B237D8A5E0061D8D1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A705237D8A5E0061D8D1 /* NetworkError.swift */; };
+		ECC8A70F237D8A5E0061D8D1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A709237D8A5E0061D8D1 /* HTTPMethod.swift */; };
+		ECC8A712237D8AE40061D8D1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */; };
+		ECC8A713237D8AE40061D8D1 /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */; };
+		ECC8A717237D8AEA0061D8D1 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A716237D8AEA0061D8D1 /* RequestBody.swift */; };
+		ECC8A718237D8AEA0061D8D1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A714237D8AEA0061D8D1 /* Request.swift */; };
+		ECC8A719237D8AEA0061D8D1 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A715237D8AEA0061D8D1 /* RequestProtocol.swift */; };
+		ECC8A71B237D8AED0061D8D1 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A71A237D8AED0061D8D1 /* ResponseParser.swift */; };
+		ECC8A71E237D8AF10061D8D1 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A71C237D8AF10061D8D1 /* Response.swift */; };
+		ECC8A71F237D8AF10061D8D1 /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A71D237D8AF10061D8D1 /* ResponseProtocol.swift */; };
+		ECC8A721237D8B280061D8D1 /* GlobalAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A720237D8B280061D8D1 /* GlobalAliases.swift */; };
+		ECC8A728237D8B7E0061D8D1 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A725237D8B7D0061D8D1 /* ServiceConfig.swift */; };
+		ECC8A729237D8B7E0061D8D1 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A726237D8B7D0061D8D1 /* ServiceProtocol.swift */; };
+		ECC8A72A237D8B7E0061D8D1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A727237D8B7D0061D8D1 /* Service.swift */; };
+		ECC8A72D237D8BB00061D8D1 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A72C237D8BB00061D8D1 /* Dictionary+Extensions.swift */; };
+		ECC8A730237D8BD80061D8D1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A72F237D8BD80061D8D1 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		ECC8A6F3237D8A330061D8D1 /* AVNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8A6F8237D8A330061D8D1 /* AVNetworkKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVNetworkKitTests.swift; sourceTree = "<group>"; };
 		ECC8A6FA237D8A330061D8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC8A705237D8A5E0061D8D1 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		ECC8A709237D8A5E0061D8D1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
+		ECC8A714237D8AEA0061D8D1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		ECC8A715237D8AEA0061D8D1 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		ECC8A716237D8AEA0061D8D1 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		ECC8A71A237D8AED0061D8D1 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		ECC8A71C237D8AF10061D8D1 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		ECC8A71D237D8AF10061D8D1 /* ResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
+		ECC8A720237D8B280061D8D1 /* GlobalAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAliases.swift; sourceTree = "<group>"; };
+		ECC8A725237D8B7D0061D8D1 /* ServiceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		ECC8A726237D8B7D0061D8D1 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		ECC8A727237D8B7D0061D8D1 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		ECC8A72C237D8BB00061D8D1 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		ECC8A72F237D8BD80061D8D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +103,14 @@
 		ECC8A6EC237D8A330061D8D1 /* AVNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
+				ECC8A720237D8B280061D8D1 /* GlobalAliases.swift */,
+				ECC8A709237D8A5E0061D8D1 /* HTTPMethod.swift */,
+				ECC8A705237D8A5E0061D8D1 /* NetworkError.swift */,
+				ECC8A72E237D8BB70061D8D1 /* Extensions */,
+				ECC8A722237D8B310061D8D1 /* Operations */,
+				ECC8A723237D8B390061D8D1 /* Request */,
+				ECC8A724237D8B430061D8D1 /* Response */,
+				ECC8A72B237D8B810061D8D1 /* Service */,
 				ECC8A6ED237D8A330061D8D1 /* AVNetworkKit.h */,
 				ECC8A6EE237D8A330061D8D1 /* Info.plist */,
 			);
@@ -84,6 +124,54 @@
 				ECC8A6FA237D8A330061D8D1 /* Info.plist */,
 			);
 			path = AVNetworkKitTests;
+			sourceTree = "<group>";
+		};
+		ECC8A722237D8B310061D8D1 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */,
+				ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		ECC8A723237D8B390061D8D1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8A714237D8AEA0061D8D1 /* Request.swift */,
+				ECC8A716237D8AEA0061D8D1 /* RequestBody.swift */,
+				ECC8A715237D8AEA0061D8D1 /* RequestProtocol.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		ECC8A724237D8B430061D8D1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8A71A237D8AED0061D8D1 /* ResponseParser.swift */,
+				ECC8A71C237D8AF10061D8D1 /* Response.swift */,
+				ECC8A71D237D8AF10061D8D1 /* ResponseProtocol.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		ECC8A72B237D8B810061D8D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8A727237D8B7D0061D8D1 /* Service.swift */,
+				ECC8A725237D8B7D0061D8D1 /* ServiceConfig.swift */,
+				ECC8A726237D8B7D0061D8D1 /* ServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ECC8A72E237D8BB70061D8D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8A72C237D8BB00061D8D1 /* Dictionary+Extensions.swift */,
+				ECC8A72F237D8BD80061D8D1 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +236,7 @@
 				TargetAttributes = {
 					ECC8A6E9237D8A330061D8D1 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					ECC8A6F2237D8A330061D8D1 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +284,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC8A70B237D8A5E0061D8D1 /* NetworkError.swift in Sources */,
+				ECC8A72A237D8B7E0061D8D1 /* Service.swift in Sources */,
+				ECC8A72D237D8BB00061D8D1 /* Dictionary+Extensions.swift in Sources */,
+				ECC8A728237D8B7E0061D8D1 /* ServiceConfig.swift in Sources */,
+				ECC8A730237D8BD80061D8D1 /* String+Extensions.swift in Sources */,
+				ECC8A718237D8AEA0061D8D1 /* Request.swift in Sources */,
+				ECC8A712237D8AE40061D8D1 /* NetworkOperation.swift in Sources */,
+				ECC8A71B237D8AED0061D8D1 /* ResponseParser.swift in Sources */,
+				ECC8A721237D8B280061D8D1 /* GlobalAliases.swift in Sources */,
+				ECC8A729237D8B7E0061D8D1 /* ServiceProtocol.swift in Sources */,
+				ECC8A71E237D8AF10061D8D1 /* Response.swift in Sources */,
+				ECC8A70F237D8A5E0061D8D1 /* HTTPMethod.swift in Sources */,
+				ECC8A71F237D8AF10061D8D1 /* ResponseProtocol.swift in Sources */,
+				ECC8A717237D8AEA0061D8D1 /* RequestBody.swift in Sources */,
+				ECC8A713237D8AE40061D8D1 /* PendingOperations.swift in Sources */,
+				ECC8A719237D8AEA0061D8D1 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +445,7 @@
 		ECC8A6FF237D8A330061D8D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y7969DNQN4;
@@ -356,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.AVNetworkKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +471,7 @@
 		ECC8A700237D8A330061D8D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y7969DNQN4;
@@ -388,6 +496,7 @@
 		ECC8A702237D8A330061D8D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7969DNQN4;
 				INFOPLIST_FILE = AVNetworkKitTests/Info.plist;
@@ -406,6 +515,7 @@
 		ECC8A703237D8A330061D8D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7969DNQN4;
 				INFOPLIST_FILE = AVNetworkKitTests/Info.plist;
