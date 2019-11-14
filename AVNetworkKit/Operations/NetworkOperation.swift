@@ -27,11 +27,7 @@ public class NetworkOperation<T>: Operation {
         execute()
     }
 
-    /// Executes the operation
-    ///
-    /// - Parameters:
-    ///   - success: Block with the type associated with the operation.
-    ///   - failure: Block in case the operation fails. Provides a NetworkError object.
+    /// Executes the operation and tried to parse the data received from the service. If it is not able to parse the data then we return a `NetworkError.failedToParseJSONData`.
     func execute() {
         service.execute(request: request) { (result) in
             switch result {
