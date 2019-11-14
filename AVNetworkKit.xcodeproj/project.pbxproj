@@ -13,7 +13,6 @@
 		ECC8A70B237D8A5E0061D8D1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A705237D8A5E0061D8D1 /* NetworkError.swift */; };
 		ECC8A70F237D8A5E0061D8D1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A709237D8A5E0061D8D1 /* HTTPMethod.swift */; };
 		ECC8A712237D8AE40061D8D1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */; };
-		ECC8A713237D8AE40061D8D1 /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */; };
 		ECC8A717237D8AEA0061D8D1 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A716237D8AEA0061D8D1 /* RequestBody.swift */; };
 		ECC8A718237D8AEA0061D8D1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A714237D8AEA0061D8D1 /* Request.swift */; };
 		ECC8A719237D8AEA0061D8D1 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A715237D8AEA0061D8D1 /* RequestProtocol.swift */; };
@@ -48,7 +47,6 @@
 		ECC8A705237D8A5E0061D8D1 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		ECC8A709237D8A5E0061D8D1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
-		ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 		ECC8A714237D8AEA0061D8D1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		ECC8A715237D8AEA0061D8D1 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		ECC8A716237D8AEA0061D8D1 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				ECC8A710237D8AE40061D8D1 /* NetworkOperation.swift */,
-				ECC8A711237D8AE40061D8D1 /* PendingOperations.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 				ECC8A70F237D8A5E0061D8D1 /* HTTPMethod.swift in Sources */,
 				ECC8A71F237D8AF10061D8D1 /* ResponseProtocol.swift in Sources */,
 				ECC8A717237D8AEA0061D8D1 /* RequestBody.swift in Sources */,
-				ECC8A713237D8AE40061D8D1 /* PendingOperations.swift in Sources */,
 				ECC8A719237D8AEA0061D8D1 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
