@@ -9,7 +9,7 @@ import Foundation
 
 /// This class is used to configure network connection with a backend server
 public final class ServiceConfig {
-    /// Name of the server configuration. Tipically you can add it your environment name, ie. "Testing" or "Production"
+    /// Name of the server configuration. Typically you can add it your environment name, ie. "Testing" or "Production"
     private(set) var name: String
 
     /// This is the base host url (ie. "http://www.myserver.com/api/v2"
@@ -62,5 +62,11 @@ extension ServiceConfig: Equatable {
     /// - Returns: `true` if equals, `false` otherwise
     public static func == (lhs: ServiceConfig, rhs: ServiceConfig) -> Bool {
         lhs.url.absoluteString.lowercased() == rhs.url.absoluteString.lowercased()
+    }
+}
+
+extension ServiceConfig {
+    enum AuthorizationType {
+        case bearerToken
     }
 }

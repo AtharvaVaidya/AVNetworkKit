@@ -13,15 +13,12 @@ public class NetworkOperation<T>: Operation {
     var request: RequestProtocol
     let service: Service
 
-    var successHandler: ((T) -> Void)?
-    var failureHandler: ((NetworkError) -> Void)?
+    var completionHandler: ((Result<T, NetworkError>) -> ())
 
-    init(request: RequestProtocol, serviceConfig: ServiceConfig, onSuccess: ((T) -> Void)?, onFailure: ((NetworkError) -> Void)?) {
+    init(request: RequestProtocol, serviceConfig: ServiceConfig, completionHandler: @escaping (Result<T, NetworkError>) -> ()) {
         self.request = request
-        service = Service(serviceConfig)
-
-        successHandler = onSuccess
-        failureHandler = onFailure
+        self.service = Service(serviceConfig)
+        self.completionHandler = completionHandler
     }
 
     public override func main() {
@@ -30,22 +27,18 @@ public class NetworkOperation<T>: Operation {
         execute()
     }
 
-    /// Executes the operation
-    ///
-    /// - Parameters:
-    ///   - success: Block with the type associated with the operation.
-    ///   - failure: Block in case the operation fails. Provides a NetworkError object.
+    /// Executes the operation and tried to parse the data received from the service. If it is not able to parse the data then we return a `NetworkError.failedToParseJSONData`.
     func execute() {
         service.execute(request: request) { (result) in
             switch result {
             case .failure(let networkError):
-                self.failureHandler?(networkError)
+                self.completionHandler(.failure(networkError))
             case .success(let data):
                 do {
                     let parsedObject = try self.parser().parse(data: data)
-                    self.successHandler?(parsedObject)
+                    self.completionHandler(.success(parsedObject))
                 } catch {
-                    self.failureHandler?(.failedToParseJSONData(data))
+                    self.completionHandler(.failure(.failedToParseJSONData(data)))
                 }
             }
         }
