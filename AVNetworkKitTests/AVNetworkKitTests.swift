@@ -21,6 +21,10 @@ class AVNetworkKitTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let urlString = "https://api.appstoreconnect.apple.com/v1/apps"
+        guard let url = URL(string: urlString) else {
+            return
+        }
     }
 
     func testPerformanceExample() {

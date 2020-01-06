@@ -1,5 +1,5 @@
 //  ServiceConfig.swift
-//  Movies
+//  AVNetworkKit
 //
 //  Created by Atharva Vaidya on 13/07/18.
 //  Copyright © 2018 Atharva vaidya. All rights reserved.
